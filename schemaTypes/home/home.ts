@@ -25,6 +25,10 @@ export default {
       type: "blogPreview"
     },
     {
+      name: "clientsSection", 
+      type: "clientsSection",
+    },
+    {
       name: "cta",
       type: "cta"
     }

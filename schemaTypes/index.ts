@@ -45,6 +45,8 @@ import contactCTA from "./contact/contactCTA";
 import loader from "./common/loader";
 import background from "./common/background";
 import footer from "./common/footer";
+import clientCard from "./shared/clientCard";
+import clientsSection from "./home/clientsSection";
 
 export const schemaTypes = [
   navbar,
@@ -60,6 +62,7 @@ export const schemaTypes = [
   whyChooseUs,
   aboutPreview,
   blogPreview,
+  clientsSection,
   homeCTA,
 
   //about page
@@ -95,6 +98,7 @@ export const schemaTypes = [
   serviceItem,
   whyChooseItem,
   blogCard,
+  clientCard,
 
   //common
   loader,
