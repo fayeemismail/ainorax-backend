@@ -16,7 +16,9 @@ export default {
           { title: "Code", value: "code" },
           { title: "Brain", value: "brain" },
           { title: "Shopping Cart", value: "cart" },
-          { title: "Cloud", value: "cloud" }
+          { title: "Cloud", value: "cloud" },
+          { title: "Megaphone", value: "megaphone" },
+          { title: "Search", value: "search" }
         ]
       }
     },
