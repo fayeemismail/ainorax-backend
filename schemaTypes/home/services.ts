@@ -1,4 +1,5 @@
 // schemaTypes/home/services.ts
+
 export default {
   name: "services",
   title: "Services Section",
@@ -8,11 +9,11 @@ export default {
     {
       name: "title",
       type: "string",
-      initialValue: "What We Do"
+      initialValue: "What We Do",
     },
     {
       name: "description",
-      type: "text"
+      type: "text",
     },
 
     // 🧩 Services List
@@ -20,17 +21,17 @@ export default {
       name: "items",
       title: "Service Items",
       type: "array",
-      of: [{ type: "serviceItem" }]
+      of: [{ type: "serviceItem" }],
     },
 
     // ⚙️ Controls
     {
       name: "showScrollHint",
       type: "boolean",
-      initialValue: true
+      initialValue: true,
     },
 
-    // 🎨 Theme (same pattern as navbar)
+    // 🎨 Theme
     {
       name: "theme",
       title: "Services Theme",
@@ -40,7 +41,10 @@ export default {
         { name: "sectionBg", type: "string" },
 
         // Heading
-        { name: "heading", type: "string" },
+        { name: "headingColor", type: "string" },
+        { name: "headingGradient", type: "string" },
+
+        // Description
         { name: "description", type: "string" },
 
         // Card
@@ -60,8 +64,8 @@ export default {
         { name: "arrowText", type: "string" },
 
         // Scroll hint
-        { name: "scrollHintText", type: "string" }
-      ]
-    }
-  ]
+        { name: "scrollHintText", type: "string" },
+      ],
+    },
+  ],
 };
