@@ -28,10 +28,11 @@ export default {
     },
     {
       name: "slug",
+      title: "Slug",
       type: "slug",
       options: {
-        source: "title"
-      }
+        source: (_doc: any, context: any) => context.parent?.title,
+      },
     }
   ]
 };
