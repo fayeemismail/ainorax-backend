@@ -32,6 +32,32 @@ export default {
         }),
     },
     {
+      name: "personImage",
+      title: "Person Image (Optional)",
+      type: "image",
+      options: { hotspot: true },
+      description: "Photo of the person who gave the feedback. Optional — only shown if uploaded.",
+    },
+    {
+      name: "personName",
+      title: "Person Name (Optional)",
+      type: "string",
+      description: "Name of the person who provided the feedback.",
+    },
+    {
+      name: "personRole",
+      title: "Person Role / Title (Optional)",
+      type: "string",
+      description: "E.g. Founder, CEO, Director. Optional.",
+    },
+    {
+      name: "companyLogo",
+      title: "Company Logo (Optional)",
+      type: "image",
+      options: { hotspot: true },
+      description: "Company logo image. Optional — if not provided, the word/initials logo will be displayed.",
+    },
+    {
       name: "order",
       title: "Display Order",
       type: "number",
@@ -57,15 +83,16 @@ export default {
     select: {
       title: "companyName",
       subtitle: "feedbackContent",
+      media: "personImage",
       order: "order",
     },
-    prepare({ title, subtitle, order }: any) {
+    prepare({ title, subtitle, media, order }: any) {
       const orderLabel = order !== undefined && order !== null ? `#${order} · ` : "";
       return {
         title: title || "Untitled Company",
         subtitle: `${orderLabel}${subtitle ? subtitle.slice(0, 80) : ""}`,
+        media,
       };
     },
   },
 };
-
