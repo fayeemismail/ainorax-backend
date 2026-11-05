@@ -29,6 +29,11 @@ export default {
       type: "clientsSection",
     },
     {
+      name: "feedbackSection",
+      title: "Client Feedback Section",
+      type: "feedbackSection",
+    },
+    {
       name: "cta",
       type: "cta"
     }

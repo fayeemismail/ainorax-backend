@@ -47,6 +47,7 @@ import background from "./common/background";
 import footer from "./common/footer";
 import clientCard from "./shared/clientCard";
 import clientsSection from "./home/clientsSection";
+import feedbackSection from "./home/feedbackSection";
 import clientFeedback from "./home/clientFeedback";
 
 export const schemaTypes = [
@@ -65,6 +66,7 @@ export const schemaTypes = [
   aboutPreview,
   blogPreview,
   clientsSection,
+  feedbackSection,
   homeCTA,
 
   //about page
