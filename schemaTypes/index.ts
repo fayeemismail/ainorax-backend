@@ -47,10 +47,12 @@ import background from "./common/background";
 import footer from "./common/footer";
 import clientCard from "./shared/clientCard";
 import clientsSection from "./home/clientsSection";
+import clientFeedback from "./home/clientFeedback";
 
 export const schemaTypes = [
   navbar,
   home,
+  clientFeedback,
   aboutPage,
   servicesPage,
   blogPage,
