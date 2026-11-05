@@ -6,12 +6,6 @@ export default {
   type: "object",
   fields: [
     {
-      name: "badge",
-      title: "Badge Text (Optional)",
-      type: "string",
-      initialValue: "Testimonials",
-    },
-    {
       name: "title",
       title: "Section Heading",
       type: "string",
